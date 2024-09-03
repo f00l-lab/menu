@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>کافه نپنتی</title>
+</head>
+<style>
+    :root {
+        --color-primary: #111111;
+        --btn--color: #d2b48c;
+        --plus--color: #fdfff5;
+        --bg-color: #704222;
+        --effect-color: #ff3366;
+        --font-color: #fff;
+        --font-primay: "peyda", sans-serif;
+        --font-title: "peyda", sans-serif;
+    }
+
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+    }
+
+    html {
+        box-sizing: border-box;
+        font-size: 62.5%;
+        font-family: var(--font-title);
+    }
+
+    body {
+        max-width: 70%;
+        margin: 5rem auto;
+        background-color: var(--bg-color);
+        color: var(--plus--color);
+    }
+
+    header {
+        padding: 5rem;
+        text-align: center;
+    }
+
+    .menu__title {
+        font-weight: 900;
+        font-size: 3rem;
+        transform: translateY(-3rem);
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .category {
+        padding: 0 2rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        color: var(--plus--color);
+        text-transform: uppercase;
+        background-color: var(--btn--color);
+        border-radius: 1rem;
+    }
+
+    .category__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .category__title {
+        font-size: 2rem;
+        font-weight: 800;
+        margin-right: 1rem;
+    }
+
+    .category__plus {
+        background-color: var(--plus--color);
+        color: var(--bg-color);
+        font-size: 2rem;
+        width: 3rem;
+        font-weight: 700;
+        margin: 1rem;
+        text-align: center;
+        border-radius: 20%;
+        cursor: pointer;
+    }
+
+    .hidden {
+        color: var(--plus--color);
+        background-color: var(--bg-color);
+        border-radius: 1rem;
+        display: none; /* تغییر به none */
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hidden-category {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .category__text {
+        margin-top: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        border-radius: 1rem;
+        color: var(--font-color);
+        background-color: var(--bg-color);
+    }
+
+    .category__text--price {
+        font-size: 1.2rem;
+        margin-left: 1rem;
+    }
+
+    .category__text:not(:first-child) {
+        padding: 0.5rem 0;
+    }
+</style>
+<body>
+<header>
+    <div class="menu">
+        <h2 class="menu__title">کافه نپنتی</h2>
+    </div>
+</header>
+<main>
+    <div class="category">
+        <div class="category__header">
+            <h3 class="category__title">نوشیدنی گرم</h3>
+            <span class="category__plus">+</span>
+        </div>
+        <div class="hidden-category">
+            <div class="hidden">
+                <p class="category__text">اسپرسو (سینگل)</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+            <div class="hidden">
+                <p class="category__text">اسپرسو (دبل)</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+            <div class="hidden">
+                <p class="category__text">آمریکانو</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+            <div class="hidden">
+                <p class="category__text">کاپوچینو</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+            <div class="hidden">
+                <p class="category__text">لاته</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+            <div class="hidden">
+                <p class="category__text">موکا</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	<div class="hidden">
+                <p class="category__text">قهوه فرانسوی</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	<div class="hidden">
+                <p class="category__text">قهوه ترک</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	<div class="hidden">
+                <p class="category__text">کارامل ماکیاتو</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	<div class="hidden">
+                <p class="category__text">کورتادو</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	<div class="hidden">
+                <p class="category__text">موکاچینو</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	<div class="hidden">
+                <p class="category__text">رومانو</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	<div class="hidden">
+                <p class="category__text">تی لته</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	<div class="hidden">
+                <p class="category__text">نسکافه</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	<div class="hidden">
+                <p class="category__text">هات چاکلت</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	<div class="hidden">
+                <p class="category__text">هات چاکلت نپنتی</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <div class="category__header">
+            <h3 class="category__title">کافه گلاسه</h3>
+            <span class="category__plus">+</span>
+        </div>
+        <div class="hidden-category">
+            <div class="hidden">
+                <p class="category__text">آیس لاته</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+            <div class="hidden">
+                <p class="category__text">آیس موکا</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+            <div class="hidden">
+                <p class="category__text">آیس کارامل ماکیاتو</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	<div class="hidden">
+                <p class="category__text">کوک اسپرسو</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	<div class="hidden">
+                <p class="category__text">آمریکن آیس لمون</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	<div class="hidden">
+                <p class="category__text">آفوگاتو</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	<div class="hidden">
+                <p class="category__text">آفوگاتو ویژه نپنتی</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <div class="category__header">
+            <h3 class="category__title">چای</h3>
+            <span class="category__plus">+</span>
+        </div>
+        <div class="hidden-category">
+            <div class="hidden">
+                <p class="category__text">چای سیاه (تک نفره)</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+            <div class="hidden">
+                <p class="category__text">چای سیاه (دونفره)</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+            <div class="hidden">
+                <p class="category__text">چای زعفران</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	<div class="hidden">
+                <p class="category__text">چای ترش (تک نفره)</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	<div class="hidden">
+                <p class="category__text">چای ترش (دو نفره)</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	<div class="hidden">
+                <p class="category__text">دمنوش آرامش (گل گاو زبان، به لیمو، آویشن)</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	<div class="hidden">
+                <p class="category__text">دمنوش نشاط (زنجبیل، بهار‌نارنج، زعفران)</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	<div class="hidden">
+                <p class="category__text">دمنوش لاغری (چای سبز، زنجبیل)</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	<div class="hidden">
+                <p class="category__text">دمنوش نپنتی (آویشن، زنجبیل، لیمو، عسل)</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <div class="category__header">
+            <h3 class="category__title">نوشیدنی سرد</h3>
+            <span class="category__plus">+</span>
+        </div>
+        <div class="hidden-category">
+            <div class="hidden">
+                <p class="category__text">سوییت</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+            <div class="hidden">
+                <p class="category__text">آنجل بری</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+            <div class="hidden">
+                <p class="category__text">آب پرتقال</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	<div class="hidden">
+                <p class="category__text">آب سیب</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	<div class="hidden">
+                <p class="category__text">آب آناناس</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	<div class="hidden">
+                <p class="category__text">آب طالبی</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <div class="category__header">
+            <h3 class="category__title">موکتل</h3>
+            <span class="category__plus">+</span>
+        </div>
+        <div class="hidden-category">
+            <div class="hidden">
+                <p class="category__text">لیموناد</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+            <div class="hidden">
+                <p class="category__text">موهیتو</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+            <div class="hidden">
+                <p class="category__text">چری بری</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	<div class="hidden">
+                <p class="category__text">رد موهیتو</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	<div class="hidden">
+                <p class="category__text">پینک نپنتی</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	<div class="hidden">
+                <p class="category__text">بلو نپنتی</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	<div class="hidden">
+                <p class="category__text">مارگاریتا</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	<div class="hidden">
+                <p class="category__text">ویولت</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	<div class="hidden">
+                <p class="category__text">سان شاین</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <div class="category__header">
+            <h3 class="category__title">شیک</h3>
+            <span class="category__plus">+</span>
+        </div>
+        <div class="hidden-category">
+            <div class="hidden">
+                <p class="category__text">شیک شکلات</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+            <div class="hidden">
+                <p class="category__text">شیک توت فرنگی</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+            <div class="hidden">
+                <p class="category__text">شیک نوتلا</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+ 	<div class="hidden">
+                <p class="category__text">شیک نوتلا توت فرنگی</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	 <div class="hidden">
+                <p class="category__text">شیک موز شکلات</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	 <div class="hidden">
+                <p class="category__text">شیک موز</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+ 	<div class="hidden">
+                <p class="category__text">شیک کره بادام زمینی</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	 <div class="hidden">
+                <p class="category__text">شیک لوتوس</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+	 <div class="hidden">
+                <p class="category__text">شیک ویتامینه نپنتی</p>
+                <p class="category__text--price number-string">10,000</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const plusButtons = document.querySelectorAll(".category__plus");
+
+        plusButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                // Get all the text elements in the same category
+                const textElements = button.parentElement.parentElement.querySelectorAll(".hidden-category .hidden");
+                textElements.forEach((text) => {
+                    // Toggle the display style of each text paragraph
+                    if (text.style.display === "none" || text.style.display === "") {
+                        text.style.display = "flex"; // نمایش
+                        text.style.margin = ".6rem";
+                    } else {
+                        text.style.display = "none"; // پنهان کردن
+                    }
+                });
+                // تغییر متن دکمه
+                button.textContent = textElements[0].style.display === "flex" ? "-" : "+";
+            });
+        });
+    });
+
+    function convertToPersianNumbers() {
+        const persianNumbers = [
+            "&#1776;",
+            "&#1777;",
+            "&#1778;",
+            "&#1779;",
+            "&#1780;",
+            "&#1781;",
+            "&#1782;",
+            "&#1783;",
+            "&#1784;",
+            "&#1785;",
+        ];
+        const numberStringElements = document.querySelectorAll(".number-string");
+
+        numberStringElements.forEach((numberStringElement) => {
+            const englishNumberString = numberStringElement.textContent.trim();
+
+            const persianNumberString = Array.from(englishNumberString)
+                .map((char) => {
+                    const index = parseInt(char);
+                    return !isNaN(index) && index >= 0 && index < persianNumbers.length
+                        ? persianNumbers[index]
+                        : char;
+                })
+                .join("");
+
+            numberStringElement.innerHTML = persianNumberString;
+        });
+    }
+
+    // Call the function to convert numbers
+    convertToPersianNumbers();
+</script>
+</body>
+</html>
